@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Pokemon Guessing Game</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="favicon.png" />
+    <script src="generations.js" defer></script>
+    <script src="script.js" defer></script>
+    <section></section>
+  </head>
+  <body>
+    <div class="navigation">
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="credit.html">Credits</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <header>
+        <h4 id="result" class="header">
+          Who's that Pokemon?
+        </h4>
+      </header>
+      <img id="pokemonImage" alt="Pokemon Image" />
+      <div id="options" class="options-container"></div>
+    </div>
+    <h4 id="points">
+      Points: <span id="pointsValue">0</span> /<span
+        id="totalCount"
+        >0</span
+      >
+    </h4>
+    <div id="loadingContainer" class="loading-container">
+      <img
+        id="loadingIcon"
+        src="loading_icon.gif"
+        alt="Loading"
+      />
+    </div>
+    <button id="settingsButton" class="settings-toggle">Settings</button>
+    <div id="settingsOverlay" class="overlay">
+      <div class="paragraph-container settings-modal">
+        <h3>Generations</h3>
+        <p>Choose which generations to be tested on!</p>
+        <div id="generationList"></div>
+        <p id="settingsMessage"></p>
+        <p class="settings-note"> Saving starts a new game and resets your score.</p>
+        <div class="settings-actions">
+          <button id="saveButton">Save</button>
+          <button id="cancelButton">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
